@@ -37,7 +37,7 @@ const Home = () => {
 
   return (
     <ScrollView
-      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
       contentContainerStyle={{ paddingBottom: 20 }}
     >
       <Container>
