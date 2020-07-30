@@ -68,6 +68,7 @@ export const ScrollContent = styled.ScrollView.attrs(() => ({
   },
 }))`
   margin-top: 35px;
+  margin-bottom: 8px;
 `;
 
 export const GalleryContainer = styled(RectButton)`

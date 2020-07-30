@@ -20,7 +20,7 @@ import {
   About,
   Description,
   Contact,
-  ProfileTitle
+  ProfileTitle,
 } from "./styles";
 
 import img1 from "../../assets/img1.jpg";
@@ -30,6 +30,8 @@ import img4 from "../../assets/img4.jpg";
 import img5 from "../../assets/img5.jpg";
 import img6 from "../../assets/img6.jpg";
 import img7 from "../../assets/img7.jpg";
+import img8 from "../../assets/img8.png";
+import img9 from "../../assets/img9.png";
 
 const items = [
   {
@@ -77,6 +79,21 @@ const items = [
   },
 ];
 
+const contacts = [
+  {
+    key: String(Math.random()),
+    img: img8,
+    title: "Whatsapp: 548585399",
+    bgColor: "#7159c1",
+  },
+  {
+    key: String(Math.random()),
+    img: img9,
+    title: "Mail: luck@com",
+    bgColor: "#7159c1",
+  }
+];
+
 const Details = () => {
   const navigation = useNavigation();
 
@@ -85,7 +102,11 @@ const Details = () => {
   }
 
   function handleProfile() {
-    navigation.navigate('Profile');
+    navigation.navigate("Profile");
+  }
+
+  function handleChat() {
+    navigation.navigate('Chat');
   }
 
   return (
@@ -103,12 +124,13 @@ const Details = () => {
         <Content>
           <UserImage
             source={{
-              uri: "https://api.adorable.io/avatars/100/abott@adorable.png",
+              uri:
+                "https://images.unsplash.com/photo-1546422401-68b415cbf8de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
             }}
           />
 
           <UserName>Lucky Skywalker</UserName>
-          <MessageButton>
+          <MessageButton onPress={handleChat}>
             <MessageText>Say Hello</MessageText>
           </MessageButton>
 
@@ -136,10 +158,10 @@ const Details = () => {
         <Contact>Contact</Contact>
 
         <ScrollContent>
-          {items.map((item) => (
-            <GalleryContainer key={item.key} bgColor={item.bgColor}>
-              <Title>{item.title}</Title>
-              <Photos source={item.img} />
+          {contacts.map((contact) => (
+            <GalleryContainer key={contact.key} bgColor={contact.bgColor}>
+              <Title>{contact.title}</Title>
+              <Photos source={contact.img} />
             </GalleryContainer>
           ))}
         </ScrollContent>
