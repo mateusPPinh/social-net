@@ -52,7 +52,7 @@ const Home = () => {
 
             <Info>
               <Name>Luk Skywalker</Name>
-              <OnlineStatus>2 hours ago</OnlineStatus>
+              <OnlineStatus>Online 2 hours ago</OnlineStatus>
               <UserStatus>Walking for no where</UserStatus>
             </Info>
           </Left>

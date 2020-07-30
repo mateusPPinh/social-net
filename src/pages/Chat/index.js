@@ -29,7 +29,7 @@ const Chat = () => {
         </Header>
       </Container>
       <ChatContainer>
-        <Input  placeholder="Type something"/>
+        <Input placeholder="Type something" />
         <InputButton>
           <ButtonText>Send</ButtonText>
         </InputButton>
