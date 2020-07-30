@@ -3,24 +3,18 @@ import { useNavigation } from '@react-navigation/native';
 
 import {
   Container,
+  ButtonReturn,
   SmallProfilePic,
   HeaderContainerSeparator,
   HeaderTitle,
-  InfoIconButton,
-  InfoIcon,
-  ButtonReturn
 } from "./styles";
 
-const ProfileHeader = () => {
+const EditProfileHeader = () => {
   const navigation = useNavigation();
 
   function handleBack() {
-    navigation.goBack('Details');
+    navigation.goBack('Profile');
   }
-
-  function handleConfiguration() {
-    navigation.navigate('Configurations');
-  } 
 
   return (
     <Container>
@@ -29,12 +23,9 @@ const ProfileHeader = () => {
       </ButtonReturn>
       <HeaderContainerSeparator />
 
-      <HeaderTitle>Your Profile</HeaderTitle>
-      <InfoIconButton onPress={handleConfiguration}>
-        <InfoIcon />
-      </InfoIconButton>
+      <HeaderTitle>Edit your profile</HeaderTitle>
     </Container>
   );
 };
 
-export default ProfileHeader;
+export default EditProfileHeader;

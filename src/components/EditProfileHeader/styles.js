@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 import { TouchableOpacity } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
-import { Feather } from '@expo/vector-icons';
+import { Feather } from "@expo/vector-icons";
 import Constants from "expo-constants";
 import { LinearGradient } from "expo-linear-gradient";
 
@@ -39,13 +39,3 @@ export const HeaderTitle = styled.Text`
   color: #fff;
 `;
 
-export const InfoIconButton = styled(TouchableOpacity)`
-  margin-left: auto;
-`;
-
-export const InfoIcon = styled(MaterialIcons).attrs({
-  name: "exit-to-app",
-})`
-  font-size: 24px;
-  color: #fff;
-`;

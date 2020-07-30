@@ -1,10 +1,14 @@
 import React from 'react';
-import { View } from 'react-native';
 
-// import { Container } from './styles';
+import { Container } from './styles';
+import EditProfileHeader from '../../components/EditProfileHeader';
 
 const Configurations = () => {
-  return <View />;
+  return (
+    <Container>
+      <EditProfileHeader />
+    </Container>
+  );
 }
 
 export default Configurations;
