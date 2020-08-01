@@ -2,6 +2,7 @@
   "expo": {
     "name": "social",
     "slug": "social",
+    "author": "Mateus P",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
