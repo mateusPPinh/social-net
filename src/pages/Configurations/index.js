@@ -10,7 +10,9 @@ import {
   Form,
   InputTitle,
   InputContainer,
-  Input
+  Input,
+  SaveButton,
+  SaveText
 } from "./styles";
 import EditProfileHeader from "../../components/EditProfileHeader";
 
@@ -24,7 +26,7 @@ const Configurations = () => {
           <AvatarInput />
         </TouchableWithoutFeedback>
         <ChangeAvatarDescription>
-          Tip to change your profile picture
+          Tip to change your profile pic
         </ChangeAvatarDescription>
 
         <Form>
@@ -48,6 +50,10 @@ const Configurations = () => {
             />
             <MaterialIcons name="person-pin" size={20} color="#999" />
           </InputContainer>
+
+          <SaveButton>
+            <SaveText>Save</SaveText>
+          </SaveButton>
         </Form>
       </Content>
     </Container>

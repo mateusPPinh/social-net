@@ -1,5 +1,6 @@
 import styled from "styled-components/native";
 import { StyleSheet, Platform } from "react-native";
+import { RectButton } from 'react-native-gesture-handler';
 
 export const Container = styled.KeyboardAvoidingView.attrs({
   behavior: Platform.OS === "ios" ? "padding" : null,
@@ -50,3 +51,19 @@ export const Input = styled.TextInput.attrs({
   color: #fff;
   flex: 1;
 `;
+
+export const SaveButton = styled(RectButton)`
+  align-self: center;
+  width: 120px;
+  height: 40px;
+  background: #21192E;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+`;
+
+export const SaveText = styled.Text`
+  color: #ffff;
+  font-weight: bold;
+`;
+
